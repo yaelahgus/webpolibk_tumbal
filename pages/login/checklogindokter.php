@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['id_poli'] = $data['id_poli'];
             $_SESSION['akses'] = "dokter";
 
-            header("location:../../dashboard_dokter.php");
+            header("location:../../routes/dokter/dashboard_dokter.php");
             exit();
         } else {
             echo '<script>alert("Password salah!");location.href="../../login.php";</script>';

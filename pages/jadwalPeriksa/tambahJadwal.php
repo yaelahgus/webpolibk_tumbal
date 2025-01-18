@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // exit();
             echo '<script>';
             echo 'alert("Jadwal berhasil ditambahkan!");';
-            echo 'window.location.href = "../../jadwalPeriksa.php";';
+            echo 'window.location.href = "../../routes/dokter/jadwalPeriksa.php";';
             echo '</script>';
             exit();
         } else {

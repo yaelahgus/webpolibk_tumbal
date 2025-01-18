@@ -1,5 +1,5 @@
 <?php
-require 'config/koneksi.php';
+require '../../config/koneksi.php';
 $id_poli = $_SESSION['id_poli'];
 
 $query_poli = "SELECT nama_poli FROM poli WHERE id = $id_poli";
@@ -22,7 +22,7 @@ if ($result) {
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="icon" type="image/png" href="assets/images/logo1.png">
+    <link rel="icon" type="image/png" href="../../assets/images/logo1.png">
     <title>Dokter Dashboard</title>
     <style>
         * {
@@ -61,8 +61,8 @@ if ($result) {
 
     <section class="Header">
         <div class="overlay">
-            <h2 class="title" style="text-bold font-family">Selamat Datang Di poli Klinik Kesehatan</h2>
-            <p>Rawat dan Jaga Baik Baik Kesehatan Tubuh Kamu</p>
+            <h2 class="title" style="text-bold font-family">Selamat Datang Di Poliklinik Dian Nuswantoro</h2>
+            <p>Sistem temu janji berbasis web yang dirancang untuk mendukung layanan kesehatan di Poliklinik Dian Nuswantoro, merupakan fasilitas kesehatan warga Universitas Dian Nuswantoro (Udinus).</p>
         </div>
     </section>
 

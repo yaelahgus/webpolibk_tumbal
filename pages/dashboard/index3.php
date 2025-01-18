@@ -1,6 +1,6 @@
 <?php
 
-include 'config/koneksi.php';
+include '../../config/koneksi.php';
 
 
 $query_jml_pasien = "SELECT COUNT(*) as jumlah_pasien FROM pasien";
@@ -41,11 +41,11 @@ if ($result_pasien && $result_dokter && $result_poli && $result_obat) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dokter Dashboard</title>
+    <title>Admin Dashboard</title>
     <!-- Link to Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="assets/images/logo1.png">
+    <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/fontawesome.min.css">
+    <link rel="icon" type="image/png" href="../../assets/images/logo1.png">
     <style>
         /* Style umum untuk teks putih */
         .text-white {

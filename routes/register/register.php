@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrasi Pasien</title>
-    <link rel="icon" type="image/png" href="asset/images/logo_dinus.png">
+    <link rel="icon" type="image/png" href="../../asset/images/logo_dinus.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -121,7 +121,7 @@
         </form>
 
         <div class="register-link">
-            <p><b>Sudah punya akun?</b> <a href="loginUser.php">Login disini</a></p>
+            <p><b>Sudah punya akun?</b> <a href="../login/loginUser.php">Login disini</a></p>
         </div>
     </div>
 

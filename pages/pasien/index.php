@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Form tambah data pasien disini -->
-                                            <form action="pages/pasien/tambahPasien.php" method="post">
+                                            <form action="../../pages/pasien/tambahPasien.php" method="post">
                                                 <div class="form-group">
                                                     <label for="nama">Nama Pasien</label>
                                                     <input type="text" class="form-control" id="nama" name="nama"
@@ -91,7 +91,7 @@
 
                                 <!-- TAMPILKAN DATA OBAT DI SINI -->
                                 <?php
-                            require 'config/koneksi.php';
+                            require '../../config/koneksi.php';
                             $no = 1;
                             $query = "SELECT * FROM pasien";
                             $result = mysqli_query($mysqli, $query);
@@ -127,7 +127,7 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <!-- Form edit data pasien disini -->
-                                                    <form action="pages/pasien/updatePasien.php" method="post">
+                                                    <form action="../../pages/pasien/updatePasien.php" method="post">
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>
                                                         <div class="form-group">
@@ -174,7 +174,7 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <!-- Form hapus data obat disini -->
-                                                    <form action="pages/pasien/hapusPasien.php" method="post">
+                                                    <form action="../../pages/pasien/hapusPasien.php" method="post">
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>
                                                         <p>Apakah anda yakin akan menghapus data <span

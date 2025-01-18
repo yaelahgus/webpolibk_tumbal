@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Jika berhasil, redirect kembali ke halaman index atau sesuaikan dengan kebutuhan Anda
         echo '<script>';
         echo 'alert("Data poli berhasil dihapus!");';
-        echo 'window.location.href = "../../poli.php";';
+        echo 'window.location.href = "../../routes/admin/poli.php";';
         echo '</script>';
         exit();
     } else {

@@ -35,7 +35,7 @@
                 $periksa += $hargaObat;
         
                 if (!$queryDetailPeriksa) {
-                    echo '<script>alert("Error");window.location.href="../../periksaPasien.php"</script>';
+                    echo '<script>alert("Error");window.location.href="../../routes/dokter/periksaPasien.php"</script>';
                     exit;
                 }
             }
@@ -45,9 +45,9 @@
             $queryUpdateperiksa = mysqli_query($mysqli, $updateperiksa);
         
             if ($queryUpdateperiksa) {
-                echo '<script>alert("Pasien telah diperiksa");window.location.href="../../periksaPasien.php"</script>';
+                echo '<script>alert("Pasien telah diperiksa");window.location.href="../../routes/dokter/periksaPasien.php"</script>';
             } else {
-                echo '<script>alert("Error");window.location.href="../../periksaPasien.php"</script>';
+                echo '<script>alert("Error");window.location.href="../../routes/dokter/periksaPasien.php"</script>';
             }
         }
         

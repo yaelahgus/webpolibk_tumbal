@@ -24,10 +24,10 @@
             $daftarPoli = "INSERT INTO daftar_poli (id_pasien, id_jadwal, keluhan, no_antrian, status_periksa) VALUES ('$idPasien', '$idJadwal', '$keluhan', '$antrianBaru', '0')";
             $queryDaftarPoli = mysqli_query($mysqli,$daftarPoli);
             if ($queryDaftarPoli) {
-                echo '<script>alert("Berhasil mendaftar poli");window.location.href="../../daftarPoliklinik.php";</script>';
+                echo '<script>alert("Berhasil mendaftar poli");window.location.href="../../routes/pasien/daftarPoliklinik.php";</script>';
             }
             else{
-                echo '<script>alert("Gagal mendaftar poli");window.location.href="../../daftarPoliklinik.php";</script>';
+                echo '<script>alert("Gagal mendaftar poli");window.location.href="../../routes/pasien/daftarPoliklinik.php";</script>';
             }
         }
         else{
@@ -36,10 +36,10 @@
             $daftarPoli = "INSERT INTO daftar_poli (id_pasien, id_jadwal, keluhan, no_antrian, status_periksa) VALUES ('$idPasien', '$idJadwal', '$keluhan', '$noAntrian', '0')";
             $queryDaftarPoli = mysqli_query($mysqli,$daftarPoli);
             if ($queryDaftarPoli) {
-            echo '<script>alert("Berhasil mendaftar poli");window.location.href="../../daftarPoliklinik.php"</script>';
+            echo '<script>alert("Berhasil mendaftar poli");window.location.href="../../routes/pasien/daftarPoliklinik.php"</script>';
             }
             else{
-                echo '<script>alert("Gagal mendaftar poli");window.location.href="../../daftarPoliklinik.php";</script>';
+                echo '<script>alert("Gagal mendaftar poli");window.location.href="../../routes/pasien/daftarPoliklinik.php";</script>';
             }
         }
     }

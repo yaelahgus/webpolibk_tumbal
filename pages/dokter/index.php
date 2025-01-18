@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Form tambah data dokter disini -->
-                                            <form action="pages/dokter/tambahDokter.php" method="post">
+                                            <form action="../../pages/dokter/tambahDokter.php" method="post">
                                                 <div class="form-group">
                                                     <label for="nama_dokter">Nama Dokter</label>
                                                     <input type="text" class="form-control" id="nama_dokter" name="nama"
@@ -67,7 +67,7 @@
                                                     <label for="poli">Poli</label>
                                                     <select class="form-control" id="poli" name="poli">
                                                         <?php
-                                                            require 'config/koneksi.php';
+                                                            require '../../config/koneksi.php';
                                                             $query = "SELECT * FROM poli";
                                                             $result = mysqli_query($mysqli,$query);
                                                             while ($dataPoli = mysqli_fetch_assoc($result)) {
@@ -103,7 +103,7 @@
 
                                 <!-- TAMPILKAN DATA dokter DI SINI -->
                                 <?php
-                            require 'config/koneksi.php';
+                            require '../../config/koneksi.php';
                             $no = 1;
                             $query = "SELECT dokter.id, dokter.nama, dokter.alamat, dokter.no_hp, poli.nama_poli FROM dokter INNER JOIN poli ON dokter.id_poli = poli.id";
                             $result = mysqli_query($mysqli, $query);
@@ -138,7 +138,7 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <!-- Form edit data poli disini -->
-                                                    <form action="pages/dokter/updateDokter.php" method="post">
+                                                    <form action="../../pages/dokter/updateDokter.php" method="post">
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>
                                                         <div class="form-group">
@@ -162,7 +162,7 @@
                                                             <label for="poli">Poli</label>
                                                             <select class="form-control" id="poli" name="poli">
                                                                 <?php
-                                                                require 'config/koneksi.php';
+                                                                require '../../config/koneksi.php';
                                                                 $query = "SELECT * FROM poli";
                                                                 $results  = mysqli_query($mysqli,$query);
                                                                 while ($dataPoli = mysqli_fetch_assoc($results)) {
@@ -193,7 +193,7 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <!-- Form edit data dokter disini -->
-                                                    <form action="pages/dokter/hapusDokter.php" method="post">
+                                                    <form action="../../pages/dokter/hapusDokter.php" method="post">
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>
                                                         <p>Apakah anda yakin akan menghapus data <span

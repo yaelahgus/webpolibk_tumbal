@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke database
-require 'config/koneksi.php';
+require '../../config/koneksi.php';
 
 // Ambil id poli dari AJAX
 $poliId = $_POST['poliId'];

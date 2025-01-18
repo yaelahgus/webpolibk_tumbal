@@ -21,7 +21,7 @@
         $queryCekKTP = mysqli_query($mysqli,$cekNoKTP);
         // jika tersedia
         if (mysqli_num_rows($queryCekKTP)>0) {
-            echo '<script>alert("No KTP telah terdaftar sebelumnya");window.location.href="../../pasien.php";</script>';
+            echo '<script>alert("No KTP telah terdaftar sebelumnya");window.location.href="../../routes/admin/pasien.php";</script>';
         }
         // jika tidak tambahkan data baru
         else{
@@ -30,10 +30,10 @@
                 $insertData = "INSERT INTO pasien (nama, password, alamat, no_ktp, no_hp, no_rm) VALUES ('$nama', '$password', '$alamat', '$no_ktp', '$no_hp', '$no_rm')";
                 $queryInsert = mysqli_query($mysqli,$insertData);
                 if ($queryInsert) {
-                    echo '<script>alert("Pendaftaran akun berhasil");window.location.href="../../pasien.php";</script>';
+                    echo '<script>alert("Pendaftaran akun berhasil");window.location.href="../../routes/admin/pasien.php";</script>';
                 }
                 else {
-                    echo '<script>alert("Pendaftaran akun gagal");window.location.href="../../pasien.php";</script>';
+                    echo '<script>alert("Pendaftaran akun gagal");window.location.href="../../routes/admin/pasien.php";</script>';
                 }
             }
             // jika sudah ada datanya maka akan generate no urut berdasarkan no_rm data terakhir
@@ -71,10 +71,10 @@
                 $queryInsertBaru = mysqli_query($mysqli,$insertDataBaru);
     
                 if ($queryInsertBaru) {
-                    echo '<script>alert("Pendaftaran akun berhasil");window.location.href="../../pasien.php";</script>';
+                    echo '<script>alert("Pendaftaran akun berhasil");window.location.href="../../routes/admin/pasien.php";</script>';
                 }
                 else{
-                    echo '<script>alert("Pendaftaran akun gagal");window.location.href="../../pasien.php";</script>';
+                    echo '<script>alert("Pendaftaran akun gagal");window.location.href="../../routes/admin/pasien.php";</script>';
                 }
             }
         }

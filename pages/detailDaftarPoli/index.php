@@ -1,5 +1,5 @@
 <?php
-    require 'config/koneksi.php';
+    require '../../config/koneksi.php';
     $id = $_GET['id'];
     $ambilDetail = mysqli_query($mysqli, "SELECT 
         dp.id as idDetailPeriksa,
@@ -69,7 +69,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="text-left">
-                            <a href="daftarPoliklinik.php" class="btn btn-md btn-secondary">
+                            <a href="../../routes/pasien/daftarPoliklinik.php" class="btn btn-md btn-secondary">
                                 Kembali
                             </a>
                         </div>

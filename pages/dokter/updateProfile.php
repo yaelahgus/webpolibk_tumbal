@@ -1,10 +1,10 @@
 <?php
-require 'config/koneksi.php';
+require '../../config/koneksi.php';
 
 // Pastikan user sudah login
 $id_dokter = $_SESSION['id'] ?? null;
 if (!$id_dokter) {
-    header("location: ../../login.php");
+    header("location: ../../routes/login/login.php");
     exit;
 }
 

@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $data = mysqli_query($mysqli,$check);
 
     if (mysqli_num_rows($data)>0) {
-        echo '<script>alert("Poli sudah ada");window.location.href = "../../poli.php";</script>';
+        echo '<script>alert("Poli sudah ada");window.location.href = "../../routes/admin/poli.php";</script>';
     }
     else {
          // Query untuk menambahkan data obat ke dalam tabel
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // exit();
                 echo '<script>';
                 echo 'alert("Data poli berhasil ditambahkan!");';
-                echo 'window.location.href = "../../poli.php";';
+                echo 'window.location.href = "../../routes/admin/poli.php";';
                 echo '</script>';
                 exit();
             } else {

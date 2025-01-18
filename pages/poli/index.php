@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <!-- Form tambah data Poli disini -->
-                                            <form action="pages/poli/tambahPoli.php" method="post">
+                                            <form action="../../pages/poli/tambahPoli.php" method="post">
                                                 <div class="form-group">
                                                     <label for="nama_poli">Nama Poli</label>
                                                     <input type="text" class="form-control" id="nama_poli"
@@ -78,7 +78,7 @@
 
                                 <!-- TAMPILKAN DATA Poli DI SINI -->
                                 <?php
-                            require 'config/koneksi.php';
+                            require '../../config/koneksi.php';
                             $no = 1;
                             $query = "SELECT * FROM poli";
                             $result = mysqli_query($mysqli, $query);
@@ -111,7 +111,7 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <!-- Form edit data poli disini -->
-                                                    <form action="pages/poli/updatePoli.php" method="post">
+                                                    <form action="../../pages/poli/updatePoli.php" method="post">
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>
                                                         <div class="form-group">
@@ -145,7 +145,7 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <!-- Form edit data Poli disini -->
-                                                    <form action="pages/poli/hapusPoli.php" method="post">
+                                                    <form action="../../pages/poli/hapusPoli.php" method="post">
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>
                                                         <p>Apakah anda yakin akan menghapus data <span

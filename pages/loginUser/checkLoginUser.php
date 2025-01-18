@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $_SESSION['no_rm'] = $data['no_rm'];
         $_SESSION['akses'] = "pasien";
 
-        header("location:../../dashboard_pasien.php");
+        header("location:../../routes/pasien/dashboard_pasien.php");
     } else {
         echo '<script>alert("Username atau password salah");location.href="../../loginUser.php";</script>';
     }

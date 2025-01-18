@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $resultOverlap = mysqli_query($mysqli,$queryOverlap);
     
     if (mysqli_num_rows($resultOverlap)>0) {
-        echo '<script>alert("Dokter lain telah mengambil jadwal ini");window.location.href="../../jadwalPeriksa.php";</script>';
+        echo '<script>alert("Jadwal Dokter Telah Diperbaharui!");window.location.href="../../routes/dokter/jadwalPeriksa.php";</script>';
     }
     else{
         // Query untuk menambahkan data obat ke dalam tabel
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // exit();
             echo '<script>';
             echo 'alert("Jadwal berhasil diubah!");';
-            echo 'window.location.href = "../../jadwalPeriksa.php";';
+            echo 'window.location.href = "../../routes/dokter/jadwalPeriksa.php";';
             echo '</script>';
             exit();
         } else {

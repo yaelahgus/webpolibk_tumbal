@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // exit();
         echo '<script>';
         echo 'alert("Data dokter berhasil ditambahkan!");';
-        echo 'window.location.href = "../../dokter.php";';
+        echo 'window.location.href = "../../routes/admin/dokter.php";';
         echo '</script>';
         exit();
     } else {

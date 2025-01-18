@@ -76,17 +76,17 @@
 </head>
 
 <body>
-    <button class="btn-back" onclick="window.location.href='index.php'">&larr; Kembali ke Halaman Awal</button>
+    <button class="btn-back" onclick="window.location.href='../../index.php'">&larr; Kembali ke Halaman Awal</button>
 
     <div class="login-box">
         <div class="card">
             <div class="card-body">
                 <div class="text-center mb-4 logo-image">
-                    <img src="assets/images/logo.png" alt="Logo">
+                    <img src="../../assets/images/logo.png" alt="Logo">
                     <!-- Logo or any image -->
                     <h5 class="mt-3">Login Dokter</h5>
                 </div>
-                <form action="pages/login/checkLogindokter.php" method="post" id="loginForm">
+                <form action="../../pages/login/checkLogindokter.php" method="post" id="loginForm">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Username" name="username" id="username"
                             required>

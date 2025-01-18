@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Pasien</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/fontawesome.min.css">
     <link rel="icon" type="image/png" href="assets/images/logo1.png">
     <style>
         * {
@@ -46,8 +46,8 @@
     <!-- Section : Main content -->
     <section class="Header">
         <div class="overlay">
-            <h2 class="title" style="text-bold font-family">Selamat Datang Di poli Klinik Kesehatan</h2>
-            <p>Rawat dan Jaga Baik Baik Kesehatan Tubuh Kamu</p>
+            <h2 class="title" style="text-bold font-family">Selamat Datang Di Poliklinik Dian Nuswantoro</h2>
+            <p>PoliDinus: <span> Temu Janji, Solusi Kesehatan Anda</span></p>
         </div>
     </section>
 
